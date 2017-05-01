@@ -1,0 +1,19 @@
+body {
+  padding: 100px 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h5.info{
+}
+
+img.state-img {
+  float: right;
+}
+
+p.btns a:first-child{
+  margin-right: 10px;
+}

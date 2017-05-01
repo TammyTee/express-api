@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    div.container
+        div.row
+            div.col.s6.l4
+                img.state-img(src='/images/#{state.img}')
+            div.col.s6
+                h5.info Details for #{state.name}
+                p Capital: #{state.capital}
+                p Nickname: #{state.nickname}
+                p Population: #{state.population}
+                p #{state.desc}
+                a.btn(href='/states/') Back to list
+
+

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div.container
+        a.btn(href="/") Home
+        h5.center List of States
+        table.bordered.highlight
+            thead
+                tr
+                    th
+                    th Name
+                    th Capital
+            tbody
+                if !states.length
+
+                else
+                    each state in states
+                        tr
+                            td #{state.id}
+                            td
+                                a(href='/states/#{state.id}') #{state.name}
+                            td #{state.capital}
+
